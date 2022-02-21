@@ -11,4 +11,7 @@ void SemiTruck::setSpeed(int s)
     Vehicle::setSpeed(s);
 }
 
-
+void SemiTruck::tryToEvade()
+{
+    
+}
