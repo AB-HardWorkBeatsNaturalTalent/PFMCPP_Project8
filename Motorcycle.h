@@ -4,11 +4,11 @@
 #include <limits>
 #include "Vehicle.h"
 
-struct Motorcycle : public Vehicle
+struct Motorcycle : Vehicle
 {
-    ~Motorcycle() override;
-    Motorcycle(const Motorcycle&) = default;
-    Motorcycle& operator=(const Motorcycle&) = default;
+    //~Motorcycle() override;
+    //Motorcycle(const Motorcycle&) = default;
+    //Motorcycle& operator=(const Motorcycle&) = default;
 
     Motorcycle(const std::string& n);
     

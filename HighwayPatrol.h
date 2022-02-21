@@ -1,8 +1,8 @@
 #pragma once 
-
-#include "Vehicle.h"
+#include <string>
+struct Vehicle;
 struct Highway;
-struct HighwayPatrol : Vehicle 
+struct HighwayPatrol
 {
     HighwayPatrol();
 
@@ -10,10 +10,8 @@ struct HighwayPatrol : Vehicle
 
     void pullOver( Vehicle* v, bool willArrest, Highway* h);
 
-    void setSpeed(int s) override;
-    
-    void tryToEvade() override;
-
+private:
+    std::string name;
 };
 
 

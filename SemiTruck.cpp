@@ -1,6 +1,6 @@
 
 #include "SemiTruck.h"
-
+#include "Vehicle.h"
 SemiTruck::SemiTruck(const std::string& n) : Vehicle(n)
 {
     

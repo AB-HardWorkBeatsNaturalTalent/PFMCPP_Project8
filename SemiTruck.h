@@ -4,10 +4,9 @@
 struct SemiTruck : Vehicle
 {
     SemiTruck(const std::string& n);
-
-    ~SemiTruck() override;
+    //~SemiTruck() override;
     SemiTruck(const SemiTruck&) = default;
-    SemiTruck& operator=(const SemiTruck&) = default;
+    //SemiTruck& operator=(const SemiTruck&) = default;
 
     void setSpeed(int s) override;
 

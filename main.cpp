@@ -49,7 +49,6 @@ your task:
 #include <iostream>
 #include <vector>
 #include <algorithm>
-#include <cassert>
 #include "Highway.h"
 #include "Car.h"
 #include "Motorcycle.h"
@@ -137,7 +136,6 @@ int main()
     motorcycles.emplace_back("ripper");
     motorcycles.emplace_back("swoof");
     
-    assert(false);
     //add the cars, motorcycles and trucks to the highway using range-based for() loops: for( element : vec ) { ... }
     //be careful to not accidentally make element copies when iterating.
     for(Car c : cars)
