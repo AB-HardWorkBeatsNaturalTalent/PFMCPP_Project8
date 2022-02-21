@@ -6,7 +6,8 @@ SemiTruck::SemiTruck() :
     
 }
 
-SemiTruck::~SemiTruck()
+void SemiTruck::setSpeed(int s)
 {
     
 }
+

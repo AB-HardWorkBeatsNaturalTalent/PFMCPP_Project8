@@ -1,7 +1,9 @@
 #pragma once
 
-struct SemiTruck
+struct SemiTruck : Vehicle
 {
     SemiTruck();
-    ~SemiTruck();
+
+    void setSpeed(int s) override;
 };
+
