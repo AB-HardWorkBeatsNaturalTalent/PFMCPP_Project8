@@ -1,9 +1,10 @@
 #pragma once
+#include "Vehicle.h"
 
 struct SemiTruck : Vehicle
 {
-    SemiTruck();
-
+    SemiTruck(const std::string& n);
     void setSpeed(int s) override;
+
 };
 

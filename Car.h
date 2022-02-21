@@ -7,3 +7,4 @@ struct Car : public Vehicle
 
     void tryToEvade();
 };
+

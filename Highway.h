@@ -14,3 +14,4 @@ private:
     int speedLimit = 65;
     std::vector<Vehicle*> vehicles;
 };
+

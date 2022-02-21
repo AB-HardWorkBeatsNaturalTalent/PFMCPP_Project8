@@ -2,6 +2,7 @@
 
 #include <iostream>
 #include <limits>
+#include "Vehicle.h"
 
 struct Motorcycle : public Vehicle
 {
@@ -13,3 +14,4 @@ struct Motorcycle : public Vehicle
 
     void setSpeed(int s) override;
 };
+
