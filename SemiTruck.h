@@ -10,7 +10,7 @@ struct SemiTruck : Vehicle
     SemiTruck& operator=(const SemiTruck&) = default;
     
     void pleaseDontShoot();
-
-    
+    void honkIfYoureHappy(bool h);
+    void pullOver();    
 };
 

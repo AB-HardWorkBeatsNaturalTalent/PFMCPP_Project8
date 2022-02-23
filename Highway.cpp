@@ -29,7 +29,7 @@ void Highway::addVehicleInternal(Vehicle* v)
     }
     else if(auto* t = dynamic_cast<SemiTruck*>(v))
     {
-        t->pleaseDontShoot();
+        t->honkIfYoureHappy(true);
     }
     else if(auto* hwy = dynamic_cast<HighwayPatrol*>(v))
     {
@@ -54,6 +54,7 @@ void Highway::removeVehicleInternal(Vehicle* v)
     else if(auto* t = dynamic_cast<SemiTruck*>(v) )
     {
         t->pleaseDontShoot();
+        t->pullOver();
     }
     else if(auto* hwp = dynamic_cast<HighwayPatrol*>(v))
     {
