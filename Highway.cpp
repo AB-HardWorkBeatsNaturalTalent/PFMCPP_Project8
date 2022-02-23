@@ -3,6 +3,7 @@
 #include "Motorcycle.h"
 #include "Car.h"
 #include "SemiTruck.h"
+#include "HighwayPatrol.h"
 
 void Highway::changeSpeed(int newSpeed)
 {
@@ -22,13 +23,17 @@ void Highway::addVehicleInternal(Vehicle* v)
     {
         m->lanesplitAndRace();
     }
-    else if(Car* c = dynamic_cast<Car*>(v))
+    else if(auto* c = dynamic_cast<Car*>(v))
     {
         c->closeWindows();
     }
-    else if(SemiTruck* t = dynamic_cast<SemiTruck*>(v))
+    else if(auto* t = dynamic_cast<SemiTruck*>(v))
     {
-        t->pullOver();
+        t->pleaseDontShoot();
+    }
+    else if(auto* hwy = dynamic_cast<HighwayPatrol*>(v))
+    {
+        
     }
 }
 
@@ -48,7 +53,7 @@ void Highway::removeVehicleInternal(Vehicle* v)
     }
     if(auto* t = dynamic_cast<SemiTruck*>(v) )
     {
-        t->pullOver();
+        t->pleaseDontShoot();
     }
     
 }

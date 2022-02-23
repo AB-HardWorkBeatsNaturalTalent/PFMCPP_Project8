@@ -11,7 +11,7 @@ struct SemiTruck : Vehicle
 
     void setSpeed(int s) override;
     
-    void pullOver();
+    void pleaseDontShoot();
 
     
 };

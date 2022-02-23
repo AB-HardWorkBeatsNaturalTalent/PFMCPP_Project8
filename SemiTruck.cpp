@@ -15,7 +15,7 @@ void SemiTruck::setSpeed(int s)
     Vehicle::setSpeed(s);
 }
 
-void SemiTruck::pullOver()
+void SemiTruck::pleaseDontShoot()
 {
-    std::cout << "pulling over" << std::endl;
+    std::cout << "pulling over, dont shoot" << std::endl;
 }

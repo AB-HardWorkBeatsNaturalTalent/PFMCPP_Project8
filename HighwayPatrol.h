@@ -16,7 +16,7 @@ struct HighwayPatrol : Vehicle
     
     void tryToEvade() override;
 
-    
+    void eatDonuts();
 };
 
 

@@ -9,12 +9,7 @@
 
 HighwayPatrol::HighwayPatrol() : Vehicle("highway patrol")
 {
-
 }
-// HighwayPatrol::~HighwayPatrol()
-// {
-    
-// }
 
 void HighwayPatrol::scanHighway(Highway* h)
 {
@@ -69,5 +64,10 @@ void HighwayPatrol::setSpeed(int s)
 void HighwayPatrol::tryToEvade()
 {
     
+}
+
+void HighwayPatrol::eatDonuts()
+{
+    std::cout << "i love donuts" << std::endl;
 }
 
