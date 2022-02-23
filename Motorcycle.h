@@ -6,11 +6,11 @@
 
 struct Motorcycle : Vehicle
 {
-    ~Motorcycle() override;
+    ~Motorcycle() override = default;
     Motorcycle& operator=(const Motorcycle&) = default;
 
     Motorcycle(const std::string& n);
-    Motorcycle(const Motorcycle& m);
+    Motorcycle(const Motorcycle& m) = default;
     void lanesplitAndRace( int topSpeed = std::numeric_limits<int>::max() );
     
     void tryToEvade() override;

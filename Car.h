@@ -2,9 +2,9 @@
 #include "Vehicle.h"
 struct Car :  Vehicle
 {
-    ~Car() override;
+    ~Car() override = default;
     Car(const std::string& s);
-    Car(const Car& c);
+    Car(const Car& c) override = default;
     Car& operator=(const Car& ref) = default;
     void closeWindows();
     void setSpeed(int s) override;
