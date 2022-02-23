@@ -3,11 +3,6 @@
 #include <iostream>
 
 Car::Car(const std::string& n) : Vehicle(n) {}
-void Car::setSpeed(int s)
-{
-    std::cout << "setting car speed" << std::endl;
-    Vehicle::setSpeed(s);
-}
 void Car::closeWindows()
 {
     setSpeed(70);

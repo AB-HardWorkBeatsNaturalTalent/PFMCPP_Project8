@@ -7,7 +7,7 @@ struct Car :  Vehicle
     Car(const Car& c) = default;
     Car& operator=(const Car& ref) = default;
     void closeWindows();
-    void setSpeed(int s) override;
+    // void setSpeed(int s) override;
     void tryToEvade() override;
 };
 

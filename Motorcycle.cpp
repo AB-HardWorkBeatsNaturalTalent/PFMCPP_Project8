@@ -22,7 +22,7 @@ void Motorcycle::setSpeed(int s)
     }
     else
     {
-        Vehicle::setSpeed(s);
+        Vehicle::setSpeed(s);//we set the speed if it is >=90
     }
 }
 
