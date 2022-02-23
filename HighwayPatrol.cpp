@@ -11,10 +11,10 @@ HighwayPatrol::HighwayPatrol() : Vehicle("highway patrol")
 {
 
 }
-HighwayPatrol::~HighwayPatrol()
-{
+// HighwayPatrol::~HighwayPatrol()
+// {
     
-}
+// }
 
 void HighwayPatrol::scanHighway(Highway* h)
 {

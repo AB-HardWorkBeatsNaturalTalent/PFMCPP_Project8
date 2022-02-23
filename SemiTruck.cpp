@@ -3,12 +3,11 @@
 #include "Vehicle.h"
 SemiTruck::SemiTruck(const std::string& n) : Vehicle(n)
 {
-    
 }
-SemiTruck::~SemiTruck()
-{
+// SemiTruck::~SemiTruck()
+// {
     
-}
+// }
 
 void SemiTruck::setSpeed(int s)
 {

@@ -3,17 +3,17 @@
 #include <iostream>
 
 Car::Car(const std::string& n) : Vehicle(n) {}
-Car::Car(Car const& c) : Vehicle(c.name)
-{
+// Car::Car(Car const& c) : Vehicle(c.name)
+// {
     
-}
-Car::~Car()
-{
+// }
+// Car::~Car()
+// {
     
-}
+// }
 void Car::setSpeed(int s)
 {
-    std::cout << "chugaluga chugaluga" << std::endl;
+    std::cout << "setting car speed" << std::endl;
     Vehicle::setSpeed(s);
 }
 void Car::closeWindows()
