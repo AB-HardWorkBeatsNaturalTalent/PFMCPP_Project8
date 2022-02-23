@@ -33,7 +33,7 @@ void Highway::addVehicleInternal(Vehicle* v)
     }
     else if(auto* hwy = dynamic_cast<HighwayPatrol*>(v))
     {
-        
+        hwy->eatDonuts();
     }
 }
 
@@ -47,14 +47,19 @@ void Highway::removeVehicleInternal(Vehicle* v)
     {
         m->tryToEvade();
     }
-    if(auto* c = dynamic_cast<Car*>(v))
+    else if(auto* c = dynamic_cast<Car*>(v))
     {
         c->tryToEvade();
     }
-    if(auto* t = dynamic_cast<SemiTruck*>(v) )
+    else if(auto* t = dynamic_cast<SemiTruck*>(v) )
     {
         t->pleaseDontShoot();
     }
+    else if(auto* hwp = dynamic_cast<HighwayPatrol*>(v))
+    {
+        hwp->eatDonuts();
+    }
+    
     
 }
 
