@@ -1,17 +1,22 @@
 #pragma once 
 #include <string>
-struct Vehicle;
+#include "Vehicle.h"
 struct Highway;
-struct HighwayPatrol
+struct HighwayPatrol : Vehicle
 {
     HighwayPatrol();
-
+    HighwayPatrol(const HighwayPatrol& hwp);
+    ~HighwayPatrol() override;
+    HighwayPatrol& operator=(const HighwayPatrol&) = default;
     void scanHighway(Highway* h);
 
     void pullOver( Vehicle* v, bool willArrest, Highway* h);
 
-private:
-    std::string name;
+    void setSpeed(int s) override;
+    
+    void tryToEvade() override;
+
+    
 };
 
 
