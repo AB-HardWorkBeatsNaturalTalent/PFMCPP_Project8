@@ -138,15 +138,15 @@ int main()
     
     //add the cars, motorcycles and trucks to the highway using range-based for() loops: for( element : vec ) { ... }
     //be careful to not accidentally make element copies when iterating.
-    for(Car& c : cars)
+    for(auto& c : cars)
     {
         highway.addVehicle(&c);        
     }
-    for(SemiTruck& t : trucks)
+    for(auto& t : trucks)
     {
         highway.addVehicle(&t);        
     }
-    for(Motorcycle& m : motorcycles)
+    for(auto& m : motorcycles)
     {
         highway.addVehicle(&m);        
     }

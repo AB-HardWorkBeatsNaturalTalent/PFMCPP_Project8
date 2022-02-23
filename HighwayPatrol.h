@@ -13,8 +13,6 @@ struct HighwayPatrol : Vehicle
     void pullOver( Vehicle* v, bool willArrest, Highway* h);
 
     void setSpeed(int s) override;
-    
-    void tryToEvade() override;
 
     void eatDonuts();
 };

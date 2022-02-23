@@ -5,7 +5,6 @@
 #include "Car.h"
 #include "SemiTruck.h"
 #include "Motorcycle.h"
-#include <typeinfo>
 
 HighwayPatrol::HighwayPatrol() : Vehicle("highway patrol")
 {
@@ -59,11 +58,6 @@ void HighwayPatrol::setSpeed(int s)
 {
     std::cout << "weewooweewooweewoo" << std::endl;
     Vehicle::setSpeed(s);
-}
-    
-void HighwayPatrol::tryToEvade()
-{
-    
 }
 
 void HighwayPatrol::eatDonuts()

@@ -4,11 +4,8 @@
 SemiTruck::SemiTruck(const std::string& n) : Vehicle(n)
 {
 }
-void SemiTruck::setSpeed(int s)
-{
-    std::cout << "vroooooooooooom-ing" << std::endl;
-    Vehicle::setSpeed(s);
-}
+
+SemiTruck::~SemiTruck() = default;
 
 void SemiTruck::pleaseDontShoot()
 {
